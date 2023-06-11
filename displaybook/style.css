@@ -1,0 +1,5 @@
+#booktext{
+    width: var(--content-width);
+    height: auto;
+    background:rgb(215, 215, 215);
+}
