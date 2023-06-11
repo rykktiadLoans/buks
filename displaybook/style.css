@@ -1,9 +1,17 @@
-#booktext{
+#text {
     width: var(--content-width);
-    height: auto;
-    background:rgb(215, 215, 215);
+    font: 22px 'Courier Std', sans-serif;
+    margin-top: 10px;
 }
 
-#title{
-    align-items: center;
+#titlediv {
+    width: var(--content-width);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#title {
+    font: 30px 'Calibri', sans-serif;
 }
