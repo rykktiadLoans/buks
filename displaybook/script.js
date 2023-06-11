@@ -4,8 +4,7 @@ let text = document.querySelector("#text");
 console.log("se");
 
 let changeTitle = function(titleObj, textObj, callback){
-    let textItem = fetch("displaybook/collection.json").then((response) => response.json());
-    callback(textObj, textItem.items[0].id);
+    let textItem = fetch("displaybook/collection.json").then((response) => response.json()).then(result => callback(textObj, result.items[0].id));
 }
 
 let changeText = function(textObj, num){
