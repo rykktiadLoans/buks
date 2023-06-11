@@ -3,3 +3,7 @@
     height: auto;
     background:rgb(215, 215, 215);
 }
+
+#title{
+    align-items: center;
+}
