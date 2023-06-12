@@ -35,4 +35,58 @@
     width: var(--content-width);
     height: 350px;
     background:rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#collection{
+    box-sizing: border-box; 
+    width: var(--content-width);
+    height: min-content;
+    background:rgb(215, 215, 215);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.subcollection{
+    box-sizing: border-box; 
+    width: var(--content-width);
+    height: min-content;
+    flex-direction: column;
+    background:rgb(215, 215, 215);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.colitem{
+    box-sizing: border-box; 
+    flex-basis: content;
+    width: 100%;
+    background-color: white;
+    padding: 3px;
+    border: 2px solid rgb(71, 71, 71);
+    border-radius: 5px;
+    font: 22px 'Courier Std', sans-serif;
+    flex-grow: 1;
+}
+
+#banner > p {
+    font: 30px 'Calibri', sans-serif;
+    width: calc(var(--content-width) * 0.70);
+    text-align: center;
+}
+
+#collectiontitle{
+    font: 35px 'Calibri', sans-serif;
+    margin-top: 20px;
 }
