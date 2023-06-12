@@ -9,6 +9,16 @@ getJson("displaybook/collection.json").then((json) => {
         element.innerHTML = "";
     });
     for(let i = 0; i < json.items.length; i++){
-        sub[i % 3].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+        let min = Math.min(sub[0].clientHeight, sub[1].clientHeight, sub[2].clientHeight);
+        if(min === sub[0].clientHeight){
+            sub[0].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+        }
+        else if(min === sub[1].clientHeight){
+            sub[1].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+        }
+        else if(min === sub[2].clientHeight){
+            sub[2].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+        }
+        
     }
 });
