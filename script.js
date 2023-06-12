@@ -1,5 +1,5 @@
 async function getJson(file){
-    let j = await fetch("file").then((response) => response.json());
+    let j = await fetch(file).then((response) => response.json());
     return j;
 }
 
