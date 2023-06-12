@@ -9,6 +9,6 @@ getJson("displaybook/collection.json").then((json) => {
         element.innerHTML = "";
     });
     for(let i = 0; i < json.items.length; i++){
-        sub[i % 3].innerHTML += json.items[i].title;
+        sub[i % 3].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
     }
 });
