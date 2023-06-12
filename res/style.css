@@ -45,27 +45,27 @@
     box-sizing: border-box; 
     width: var(--content-width);
     height: min-content;
-    background:rgb(215, 215, 215);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
-    gap: 10px;
+    gap: 0px;
     padding: 10px;
 }
 
 .subcollection{
     box-sizing: border-box; 
-    width: var(--content-width);
+    width:calc(100% / 3);
     height: min-content;
     flex-direction: column;
-    background:rgb(215, 215, 215);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
     gap: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .colitem{
@@ -73,7 +73,7 @@
     flex-basis: content;
     width: 100%;
     background-color: white;
-    padding: 3px;
+    padding: 5px;
     border: 2px solid rgb(71, 71, 71);
     border-radius: 5px;
     font: 22px 'Courier Std', sans-serif;
@@ -88,5 +88,5 @@
 
 #collectiontitle{
     font: 35px 'Calibri', sans-serif;
-    margin-top: 20px;
+    margin-top: 40px;
 }
