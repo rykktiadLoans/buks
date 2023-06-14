@@ -5,10 +5,6 @@
     outline: 0px;
     border: 0px;
 }
-a { /* little hater >:[*/
-    color: inherit; 
-    text-decoration: inherit; 
-  }
 
 :root{
     --content-width: 750px;
