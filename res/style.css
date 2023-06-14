@@ -6,6 +6,7 @@
     border: 0px;
 }
 
+
 :root{
     --content-width: 750px;
 }
@@ -82,7 +83,13 @@
     flex-grow: 1;
     transition: border 1s cubic-bezier(0,1,.74,1), box-shadow 1s cubic-bezier(0,1,.74,1);
     box-shadow: 0px 0px 7px white, 0px 0px 7px white;
+    color: black;
+    text-decoration: none;
 }
+.colitem > div{
+    font: 22px 'Courier Std', sans-serif;
+}
+
 
 #banner > p {
     font: 30px 'Calibri', sans-serif;
