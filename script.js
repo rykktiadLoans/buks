@@ -11,13 +11,13 @@ getJson("displaybook/collection.json").then((json) => {
     for(let i = 0; i < json.items.length; i++){
         let min = Math.min(sub[0].clientHeight, sub[1].clientHeight, sub[2].clientHeight);
         if(min === sub[0].clientHeight){
-            sub[0].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+            sub[0].innerHTML += `<a href="/displaybook?id=${json.item[i].id}"><div class="colitem">${json.items[i].title}</div></a>`;
         }
         else if(min === sub[1].clientHeight){
-            sub[1].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+            sub[1].innerHTML += `<a href="/displaybook?id=${json.item[i].id}"><div class="colitem">${json.items[i].title}</div></a>`;
         }
         else if(min === sub[2].clientHeight){
-            sub[2].innerHTML += `<div class="colitem">${json.items[i].title}</div>`;
+            sub[2].innerHTML += `<a href="/displaybook?id=${json.item[i].id}"><div class="colitem">${json.items[i].title}</div></a>`;
         }
         
     }
