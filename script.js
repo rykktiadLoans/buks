@@ -11,13 +11,13 @@ getJson("displaybook/collection.json").then((json) => {
     for(let i = 0; i < json.items.length; i++){
         let min = Math.min(sub[0].clientHeight, sub[1].clientHeight, sub[2].clientHeight);
         if(min === sub[0].clientHeight){
-            sub[0].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div class="colitem">${json.items[i].title}</div></a>`;
+            sub[0].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div>${json.items[i].title}</div></a>`;
         }
         else if(min === sub[1].clientHeight){
-            sub[1].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div class="colitem">${json.items[i].title}</div></a>`;
+            sub[1].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div>${json.items[i].title}</div></a>`;
         }
         else if(min === sub[2].clientHeight){
-            sub[2].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div class="colitem">${json.items[i].title}</div></a>`;
+            sub[2].innerHTML += `<a href="/buks/displaybook?id=${json.items[i].id}" class="colitem"><div>${json.items[i].title}</div></a>`;
         }
         
     }
