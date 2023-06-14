@@ -22,3 +22,24 @@ getJson("displaybook/collection.json").then((json) => {
         
     }
 });
+
+let table = document.querySelector("#collection");
+table.onmouseover = function(event) {
+    let item = event.target.closest(".colitem");
+    if(!item){
+        return;
+    }
+    item.style.border = "2px solid rgb(28, 153, 207)";
+    let shadow = "2px 2px 7px rgb(28, 153, 207)";
+    item.style.boxShadow = shadow + ", "+ "-2px -2px 7px rgb(28, 153, 207)";
+};
+
+table.onmouseout = function(event) {
+    let item = event.target.closest(".colitem");
+    if(!item){
+        return;
+    }
+    item.style.border = "2px solid rgb(71, 71, 71)";
+    let shadow = "0px 0px 5px white";
+    item.style.boxShadow = shadow + ", "+ shadow;
+};

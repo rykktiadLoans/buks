@@ -45,8 +45,8 @@
     box-sizing: border-box; 
     width: var(--content-width);
     height: min-content;
-    border-left: 3px solid black;
-    border-right: 3px solid black;
+    border-radius: 5px;
+    border: 2px solid rgb(71, 71, 71);
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -69,6 +69,7 @@
 }
 
 .colitem{
+    -moz-box-sizing: border-box;
     box-sizing: border-box; 
     flex-basis: content;
     width: 100%;
@@ -78,6 +79,8 @@
     border-radius: 5px;
     font: 22px 'Courier Std', sans-serif;
     flex-grow: 1;
+    transition: border 1s cubic-bezier(0,1,.74,1), box-shadow 1s cubic-bezier(0,1,.74,1);
+    box-shadow: 0px 0px 7px white, 0px 0px 7px white;
 }
 
 #banner > p {
